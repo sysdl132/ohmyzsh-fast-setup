@@ -2,7 +2,7 @@ echo "start install for yum-like system now ..."
 sleep 1
 echo "1 of 2: install dependcies ..."
 echo "deps are: git snap zsh ruby curl perl nodejs python3,vim fortune are for theme"
-sudo yum install git snapd curl zsh ruby perl nodejs python3 vim fortune-mod
+sudo yum -y install git snapd curl zsh ruby perl nodejs python3 vim fortune-mod
 echo "installing nodejs"
 curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
 cp /usr/games/fortune /usr/bin
